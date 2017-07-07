@@ -17,6 +17,7 @@ Jenkins拥有的特性包括：<br/>
 
 第二章 Jenkins环境准备
 
+
 第三章 Jenkins安装与配置<br/>
 
  1 Jenkins安装：<br/>
@@ -30,5 +31,4 @@ Jenkins拥有的特性包括：<br/>
 
 还有一种安装方式就是将下载的war包文件部署到 servlet 容器，然后启动容器，在浏览器的URL地址栏中输入类似http://localhost:8080/jenkins/这样的地址即可。<br/>
 
-2 系统管理</br>
- 在已运行的Jenkins主页中，点击左侧的系统管理
+Jenkins+MSBuild+SVN实现dotnet持续集成 快速搭建持续集成环境：详情参考：http://www.cnblogs.com/linJie1930906722/p/5966581.html
