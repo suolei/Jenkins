@@ -42,9 +42,9 @@ Jenkins+MSBuild+SVN实现dotnet持续集成 快速搭建持续集成环境：详
 第一步：准备工作<br/>
 1、系统管理--》管理插件--》可选插件中找到MSBuild Plugin， 安装插件 MSBuild Plugin<br/>
 2、配置MSBuild（系统管理--》Global Tool Configuration--》MSBuild安装）<br/>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016132049874-860505317.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016132337717-1687182581.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016132507124-318616163.png'></image>
+<image src='\Images\852343-20161016132049874-860505317.png'></image>
+<image src='\Images\852343-20161016132337717-1687182581.png'></image>
+<image src='\Images\852343-20161016132507124-318616163.png'></image>
 参数填写说明：
 MSBuild Name 只是一个名称可以随便填，但建议填有点意义名称，例如：MSBuild_v4.0
 Path to MSBuild 这个是安装MSBuild所在的路径，例如：C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe
@@ -54,12 +54,12 @@ Path to MSBuild 这个是安装MSBuild所在的路径，例如：C:\Windows\Micr
 
 系统管理--》系统设置 找到 Extended E-mail Notification（此插件需要安装，图中的部分信息需要点击 高级 按钮才能显示）
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016140737686-1180454777.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016140936092-422269951.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016141026483-5367024.png'></image>
+<image src='\Images\852343-20161016140737686-1180454777.png'></image>
+<image src='\Images\852343-20161016140936092-422269951.png'></image>
+<image src='\Images\852343-20161016141026483-5367024.png'></image>
 
 邮件通知节点配置（图中的部分信息需要点击 高级 按钮才能显示）：
-<image src='D:\GitHub\Jenkins\Images\852343-20161016141309983-1885105444.png'></image>
+<image src='\Images\852343-20161016141309983-1885105444.png'></image>
 
 上面的配置是邮件的发送者的163邮件信息
 说明：
@@ -72,63 +72,63 @@ Password（密码）：163邮箱的 客户端授权码
 登录163邮箱--》设置--》POP3/SMTP/IMAP
 
 开启 服务POP3/SMTP/IMAP
-<image src='D:\GitHub\Jenkins\Images\852343-20161016143715249-925022850.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016144049374-1134278468.png'></image>
+<image src='\Images\852343-20161016143715249-925022850.png'></image>
+<image src='\Images\852343-20161016144049374-1134278468.png'></image>
 选中上图的 开启 获得 授权码  此授权码就是  配置邮件通知时的密码
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016144509342-17956129.png'></image>
+<image src='\Images\852343-20161016144509342-17956129.png'></image>
 设置客户端授权码成功：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016144812467-843351909.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016144909514-974894411.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016145215202-1893788664.png'></image>
+<image src='\Images\852343-20161016144812467-843351909.png'></image>
+<image src='\Images\852343-20161016144909514-974894411.png'></image>
+<image src='\Images\852343-20161016145215202-1893788664.png'></image>
 系统管理员邮件地址配置 可以不配置：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016140541795-427623772.png'></image>
+<image src='\Images\852343-20161016140541795-427623772.png'></image>
 job里面邮件通知的配置（配置邮件接收者的信息）
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016150001170-822796692.png'></image>
+<image src='\Images\852343-20161016150001170-822796692.png'></image>
 进入配置：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016151239295-731174816.png'></image>
+<image src='\Images\852343-20161016151239295-731174816.png'></image>
 default Content 为邮件模板：
 
 点击 advanced settings 进入高级设置：
-<image src='D:\GitHub\Jenkins\Images\852343-20161016152102842-740428036.png'></image>
+<image src='\Images\852343-20161016152102842-740428036.png'></image>
 这里选择了成功和失败的情况下发送：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016151716249-1774634163.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016152602686-1418720107.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016152624264-309110766.png'></image>
+<image src='\Images\852343-20161016151716249-1774634163.png'></image>
+<image src='\Images\852343-20161016152602686-1418720107.png'></image>
+<image src='\Images\852343-20161016152624264-309110766.png'></image>
 现在开始进行搭建job 点击 
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016193032655-1183878078.png'></image>
+<image src='\Images\852343-20161016193032655-1183878078.png'></image>
 进入下图的界面：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016193533608-196799265.png'></image>
+<image src='\Images\852343-20161016193533608-196799265.png'></image>
 点击 OK 按钮后 进入一下页面
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016194827952-1749987114.png'></image>
+<image src='\Images\852343-20161016194827952-1749987114.png'></image>
 到处一个新的 job就新建完成了，下面开始配置job
 点击 源代码管理(tab)--》选中Subversion
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016200324092-509052253.png'></image>
+<image src='\Images\852343-20161016200324092-509052253.png'></image>
 添加登录SVN账号和密码
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016200812030-764100282.png'></image>
+<image src='\Images\852343-20161016200812030-764100282.png'></image>
 最后 源代码管理(tab) 配置为：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016201016170-49995862.png'></image>
+<image src='\Images\852343-20161016201016170-49995862.png'></image>
 构建触发器（tab）此项是设置间隔多长时间去检查一次SVN的代码有没有变化，如果有变化则重新编译
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016201633249-1293520517.png'></image>
+<image src='\Images\852343-20161016201633249-1293520517.png'></image>
 构建环境(tab) 未研究此项配置有何作用，使用默认的，不做任何修改
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016202004874-1143279438.png'></image>
+<image src='\Images\852343-20161016202004874-1143279438.png'></image>
 构建(tab)此项设置编译方式、将站点文件拷贝到iis的站点目录下发布站点
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016203153092-552938836.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016203856124-2140779098.png'></image>
+<image src='\Images\852343-20161016203153092-552938836.png'></image>
+<image src='\Images\852343-20161016203856124-2140779098.png'></image>
 说明：
 
 /t:ResolveReferences;Compile /t:_CopyWebApplication /p:Configuration=Release /property:TargetFrameworkVersion=v4.0 /p:WebProjectOutputDir=D:\Jenkins_Publish\DEV_Metadata /p:OutputPath=D:\Jenkins_Publish\DEV_Metadata\bin
@@ -177,8 +177,8 @@ d:\JenkinsWeb 拷贝文件到此目录下
 
 编译成功时发送邮件通知：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016213549780-1997556262.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016213917811-841888291.png'></image>
+<image src='\Images\852343-20161016213549780-1997556262.png'></image>
+<image src='\Images\852343-20161016213917811-841888291.png'></image>
 说明：
 Recipient List ：接收邮件的邮箱（如果有多个用英文逗号隔开）
 Content ：发送邮件的模板
@@ -186,11 +186,11 @@ Content ：发送邮件的模板
 到此已经job配置完成，下面来看看 构建结果
 
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016220914342-833636600.png'></image>
+<image src='\Images\852343-20161016220914342-833636600.png'></image>
 构建成功
 此次测试安装的插件：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016221108170-905562741.png'></image>
+<image src='\Images\852343-20161016221108170-905562741.png'></image>
 
 
 
