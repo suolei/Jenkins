@@ -42,7 +42,6 @@ Jenkins+MSBuild+SVN实现dotnet持续集成 快速搭建持续集成环境：详
 第一步：准备工作<br/>
 1、系统管理--》管理插件--》可选插件中找到MSBuild Plugin， 安装插件 MSBuild Plugin<br/>
 2、配置MSBuild（系统管理--》Global Tool Configuration--》MSBuild安装）<br/>
-![Images](D:\GitHub\Jenkins\Images\852343-20161016132049874-860505317.png)
 <image src='D:\GitHub\Jenkins\Images\852343-20161016132049874-860505317.png'></image>
 <image src='D:\GitHub\Jenkins\Images\852343-20161016132337717-1687182581.png'></image>
 <image src='D:\GitHub\Jenkins\Images\852343-20161016132507124-318616163.png'></image>
@@ -54,8 +53,8 @@ Path to MSBuild 这个是安装MSBuild所在的路径，例如：C:\Windows\Micr
 邮件通知需要配置两个地方，一处是在系统设置，一处是在job配置中的 构建后操作 Extended E-mail Notification与E-mail Notification节点配置：
 
 系统管理--》系统设置 找到 Extended E-mail Notification（此插件需要安装，图中的部分信息需要点击 高级 按钮才能显示）
-<image src='D:\GitHub\Jenkins\Images\852343-20161016140737686-1180454777.png'></image>
 
+<image src='D:\GitHub\Jenkins\Images\852343-20161016140737686-1180454777.png'></image>
 <image src='D:\GitHub\Jenkins\Images\852343-20161016140936092-422269951.png'></image>
 <image src='D:\GitHub\Jenkins\Images\852343-20161016141026483-5367024.png'></image>
 
@@ -164,17 +163,18 @@ d:\JenkinsWeb 拷贝文件到此目录下
 
 /exclude:C:\Users\jie\Desktop\exclude.txt  /exclude 指定含有字符串的文件列表。如果有任何字符串与要被复制的文件的绝对路径相符，那个文件将不会得到复制。例如，指定如 \obj\ 或 .obj 的字符串会排除目录 obj 下面的所有文件或带有.obj 扩展名的件。exclude.txt文档是排除文件或者目录，如果有排除多种类型的文件或者目录，则用户换行分割
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016210312155-904591075.png'></image>
+<image src='Images\852343-20161016210312155-904591075.png'></image>
 说明：
 排除 .pdb后缀的文件，和web.config 文件
 
 构建后操作(tab) 此项主要是配置邮件通知 将编译情况发送给开发者
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016215214545-583119719.png'></image>
-<image src='D:\GitHub\Jenkins\Images\852343-20161016212422842-552893537.png'></image>
+<image src='Images\852343-20161016215214545-583119719.png'></image>
+<image src='Images\852343-20161016212422842-552893537.png'></image>
 编译错误时发送通知：
 
-<image src='D:\GitHub\Jenkins\Images\852343-20161016213405920-582291345.png'></image>
+<image src='Images\852343-20161016213405920-582291345.png'></image>
+
 编译成功时发送邮件通知：
 
 <image src='D:\GitHub\Jenkins\Images\852343-20161016213549780-1997556262.png'></image>
